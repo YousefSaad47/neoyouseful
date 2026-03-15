@@ -25,7 +25,9 @@ opt.backup = false
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
 
-opt.scrolloff = 8
+if not vim.g.vscode then
+  opt.scrolloff = 8
+end
 opt.signcolumn = "yes"
 opt.isfname:append("@-@")
 

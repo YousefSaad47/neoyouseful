@@ -4,8 +4,8 @@ local map = vim.keymap.set
 
 map("n", "<leader>ex", vim.cmd.Ex, { desc = "Netrw explorer" })
 
-map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
-map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
+-- map("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
+-- map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 
 vim.api.nvim_set_keymap(
   "n",
